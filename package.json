@@ -1,0 +1,28 @@
+{
+  "name": "fugu-experience-logo-reveal",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Cinematic logo reveal for FUGU EXPERIENCE — TAMALE 2026 (Remotion)",
+  "scripts": {
+    "dev": "remotion studio",
+    "studio": "remotion studio",
+    "extract": "node scripts/extract-svg.mjs",
+    "typecheck": "tsc --noEmit",
+    "still": "remotion still FuguExperienceSquare out/final-frame.png --frame=359",
+    "render": "remotion render FuguExperienceSquare out/fugu-experience-tamale-2026.mp4 --codec=h264 --crf=14 --pixel-format=yuv420p --x264-preset=slow --muted",
+    "render:draft": "remotion render FuguExperienceSquare out/draft.mp4 --codec=h264 --crf=23 --x264-preset=veryfast",
+    "check:layers": "node scripts/check-layers.mjs",
+    "check:settle": "node scripts/check-settle.mjs"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.250",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.250"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.12",
+    "typescript": "5.6.3"
+  },
+  "type": "module"
+}
