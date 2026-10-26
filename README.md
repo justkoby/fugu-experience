@@ -1,7 +1,7 @@
 # FUGU EXPERIENCE — TAMALE 2026 · Cinematic Logo Reveal
 
 A choreographed, frame-deterministic logo animation built with **Remotion + React + TypeScript + native SVG**.
-Source artwork: `logo-with landmark.svg` (never modified). Output: **1080 × 1080, 30 fps, 12 s (360 frames), silent, solid black**.
+Source artwork: `logo-with landmark.svg` (never modified). Output: **1080 × 1080, 30 fps, 12 s (360 frames), silent, solid white**.
 
 ```bash
 npm install
@@ -38,7 +38,7 @@ The artwork is shifted down 43 px (`LAYOUT.offsetY`) so the logo is optically ce
 relative positions between elements are untouched.
 
 **Exact final frame:** once a layer finishes, it is rendered as its untouched original paths (no clip/transform), so the
-final frame equals the source art. Compared to the original SVG on black (same offset, push-in disabled via
+final frame equals the source art. Compared to the original SVG on the same background (same offset, push-in disabled via
 `debugStaticCamera`), only sub-pixel anti-aliasing differs.
 
 ## Timeline (frames @ 30 fps) — all editable in `src/config/animation.ts`

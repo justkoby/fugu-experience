@@ -5,7 +5,7 @@
 export const FPS = 30;
 export const DURATION_IN_FRAMES = 360; // 12 s
 export const COMP_SIZE = 1080;
-export const BACKGROUND = '#000000';
+export const BACKGROUND = '#FFFFFF';
 
 export type Range = {start: number; end: number};
 
